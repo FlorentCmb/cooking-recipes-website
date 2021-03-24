@@ -1,0 +1,14 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Default style and CSS variable */
+html, body {
+  margin: 0;
+  --mainColor: rgb(255, 123, 0);
+  --secondColor: white;
+  --thirdColor: grey;
+  --defaultBgColor: rgb(247, 247, 247);
+  font-family: 'Roboto', sans-serif;
+  color: var(--thirdColor);
+  background-color: var(--secondColor);
+}

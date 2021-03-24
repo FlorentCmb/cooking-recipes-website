@@ -1,0 +1,30 @@
+.Header {
+    background-color: var(--mainColor);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.Header-Link {
+    color: var(--secondColor);
+    background-color: var(--mainColor);
+    text-decoration: none;
+    transition-duration: .6s;
+    padding: 20px 25px;
+    font-size: 17px;
+}
+
+.Header-Link:hover {
+    color: var(--mainColor);
+    background-color: var(--secondColor);
+}
+
+.Header-Link-Active {
+    color: var(--mainColor);
+    background-color: var(--secondColor);
+    border-radius: 0 15px 0 0;
+}

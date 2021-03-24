@@ -1,0 +1,66 @@
+.HomePage {
+    margin-top: 20px;
+}
+
+/* First part of the home page (filters) */
+.HomePage-Filters-Container {
+    position: sticky;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    height: 50px;
+}
+
+.HomePage-Filters-Container > * {
+    margin-left: 5px;
+}
+
+.HomePage-Filter-Input {
+    background-color: var(--secondColor);
+    border: 2px solid var(--thirdColor);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    padding: 0 10px;
+    width: 250px;
+}
+
+.HomePage-Filter-Button {
+    background-color: var(--secondColor);
+    border: 2px solid var(--thirdColor);
+    font-family: 'Roboto', sans-serif;
+    transition-duration: .5s;
+    color: var(--thirdColor);
+    border-radius: 25px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.HomePage-Filter-Button:hover {
+    border: 2px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+.HomePage-Filter-Button-Active {
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    color: var(--secondColor);
+}
+
+.HomePage-Filter-Button-Active:hover {
+    color: var(--secondColor);
+}
+
+.HomePage-Filter-Results {
+    margin: auto 5px;
+    padding: 5px 0;
+}
+
+/* Second part of the home page (recipe cards) */
+.HomePage-Recipe-Cards {
+    padding: 20px 0;
+    background-color: var(--defaultBgColor);
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,54 @@
+Modèles de données :
+
+id : nombre entier
+name : string
+nbOfPersons : nombre entier
+ingredients : tableau d'objets contenant un nom d'ingrédient, valeur de quantité et nom de quantité
+cookingTools : tableau de string
+steps : tableau de string
+
+Exemple :
+
+{
+ id : 1,
+ name : "Purée",
+ nbOfPersons : 4,
+ ingredients : [{
+  name : "Pomme de terre",
+  qtyValue : 1,
+  qtyType : "kg"
+ }, {
+  name : "Muscade",
+  qtyValue : 1,
+  qtyType : "cuil. à café"
+ }, {
+ }],
+ cookingTools : ["Presse-purée", "Saladier", "Casserole"],
+ steps : [{
+  name : "",
+  picturePath : "/pictures/ecraser_patates.jpg",
+  text : "
+ }]
+}
+
+
+Transormation de données :
+ - tableaux et objets transformés en chaines de caractères et vice-versa grâce aux méthodes stringify et parse
+ - s'il n'y a pas de données dans le name et picturePath des étapes, la valeur ne sera pas montrée
+
+Base de données :
+
+|----------------------------|
+| Recipes                    |
+|----------------------------|
+| id (number)                |
+| name (string)              |
+| nbrOfPersons (number)      |
+| ingredients (string)       |
+| cookingTools (string)      |
+| steps (string)             |
+|----------------------------|
+
+Création de la bdd en MySQL :
+
+create table recipes_list ( id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, name TINYTEXT, nbOfPersons INT NOT NULL, ingredients LONGTEXT, cookingTools LONGTEXT, steps LONGTEXT );
